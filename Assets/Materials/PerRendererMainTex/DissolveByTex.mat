@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DissolveGradient
-  m_Shader: {fileID: 4800000, guid: fa4625ee7e5d62f40a2fb3fa69681ec5, type: 3}
+  m_Name: DissolveByTex
+  m_Shader: {fileID: 4800000, guid: a90cc732cfbd8c846bb6fb054408a566, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,8 +23,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NoizeTex:
+        m_Texture: {fileID: 2800000, guid: e1d4bf1bcc352514fa6cb46e6e33a3bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_9385C47D: 0
-    - Vector1_B6385364: 0.1
+    - _DissolveSize: 0.1
+    - _NoizeSize: 50
+    - _Ratio: 0.98
     m_Colors:
-    - Color_3A798CD1: {r: 0.9811321, g: 0.1619793, b: 0.9600149, a: 0}
+    - _DissolveColor: {r: 0.9803922, g: 0.5442583, b: 0.1607843, a: 0.5176471}
